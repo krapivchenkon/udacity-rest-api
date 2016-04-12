@@ -35,8 +35,13 @@ docker build -t l2p6 .
 JOB=$(docker run -d -p 80:5000 --name l2p6 l2p6)
 ```
 - attach to container in different shell(after exit container will run):
-    `docker exec -it $JOB /bin/bash` 
-- attach to the same shell `docker attach $JOB`
+```sh
+    docker exec -it $JOB /bin/bash
+```
+- attach to the same shell 
+```sh
+     docker attach $JOB
+```
 
 
 ## Installing Redis
