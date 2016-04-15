@@ -1,1 +1,6 @@
 Flask
+SQLAlchemy
+httplib2
+itsdangerous
+passlib
+Flask-HTTPAuth

@@ -15,6 +15,7 @@ try:
 	url = address + "/puppies?name=Fido&description=Playful+Little+Puppy"
 	h = httplib2.Http()
 	resp, result = h.request(url, 'POST')
+	print result
 	obj = json.loads(result)
 	puppyID = obj['Puppy']['id']
 	if resp['status'] != '200':
