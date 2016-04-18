@@ -4,3 +4,4 @@ httplib2
 itsdangerous
 passlib
 Flask-HTTPAuth
+redis
